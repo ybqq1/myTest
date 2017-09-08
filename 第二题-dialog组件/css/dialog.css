@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span,  object, iframe,
+h1, h2, h3, h4, h5, h6,a, em, img, b, u, 
+dl, dt, dd, ol, ul, li,table,  thead, tr,
+th, td,article,footer, header,menu, nav{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+/*针对于页面button*/
+@-webkit-keyframes fadeInNoTransform {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInNoTransform {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInNoTransform {
+  -webkit-animation-name: fadeInNoTransform;
+  animation-name: fadeInNoTransform;
+}
+
+@-webkit-keyframes fadeOutNoTransform {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOutNoTransform {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*dialog样式*/
+.cpt_mask_dailog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: '微软雅黑','Microsoft Yahei';
+  z-index: 1000002;
+  animation-duration: 0.6s;
+}
+.cpt_mask_dailog .div_dailog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  min-width: 240px;
+  min-height: 130px;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -moz-box-shadow: 0 3px 10px #aaa;
+  -webkit-box-shadow: 0 3px 10px #aaa;
+  box-shadow: 0 3px 10px #aaa;
+}
+/*dialog样式里的标题样式*/
+.cpt_mask_dailog .div_dailog .title_dailog {
+  font-size: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  height: 40px;
+}
+/*dialog样式里的描述信息样式*/
+.cpt_mask_dailog .div_dailog .discription_dailog {
+  padding: 14px 0 10px 0;
+  font-size: 14px;
+  text-indent: 16px;
+  line-height: 1.6;
+}
+/*dialog样式里的按钮样式*/
+.cpt_mask_dailog .div_dailog .dailog_divOperation {
+  overflow: hidden;
+  padding: 3px 2px;
+  float: right;
+  height: 36px;
+}
+.cpt_mask_dailog .div_dailog .dailog_divOperation .btn_span {
+  padding: 6px 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+    color: #fff;
+  background: #21B384;
+}
+/*dialog样式里的两个按钮划过的颜色改变*/
+.cpt_mask_dailog .div_dailog .dailog_divOperation .btn_span:hover{
+ background: #28A47C;}
+/*dialog样式里的两个按钮间距*/
+.cpt_mask_dailog .div_dailog .dailog_divOperation .btn_span:first-child {
+  margin-right: 10px;
+}
+/*dialog样式里的分隔线样式*/
+.cpt_mask_dailog.success .title_dailog {
+  color: #6EB279;
+  border-bottom: 1px dashed #21B384;
+}

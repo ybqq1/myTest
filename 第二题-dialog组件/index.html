@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery制作的对话框</title>
+<link rel="stylesheet" href="css/dialog.css">
+</head>
+<style type="text/css">
+.div-testDialog{
+	width: 500px;
+	height: auto;
+	margin: 50px auto;
+	
+}
+.div-testDialog button{
+	margin:10px;
+	color:green;
+	cursor:pointer;
+}
+.div-testDialog button:hover{color:pink}
+</style>
+<body> 
+<div class="div-testDialog">
+	<button class="dw-btn btn-success has-hover" onClick="javascript:$('body').dailog({type:'success',maskBg:'rgba(88,11,22,0.5)'})">点击我哦</button>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+</body>
+</html>
